@@ -1,8 +1,6 @@
-class Solution(object):
-    def containsDuplicate(self, nums):
-        charSet=set(nums)
-        if (len(nums)==len(charSet)):
-            return False
-        else:
-            return True
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+       if len(nums)==len(set(nums)):
+          return False
+       return True
         
